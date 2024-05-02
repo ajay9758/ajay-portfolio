@@ -12,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link,
 }: ProjectProps) {
   const { ref } = useSectionInView("Projects");
   const ref2 = useRef<HTMLDivElement>(null);
@@ -40,6 +41,9 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+          <a href={link} target="_blank" className="mt-4 text-blue-500 underline">
+            View Project
+          </a>
           <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
             {tags.map((tag: string, index: number) => (
               <li
@@ -56,7 +60,7 @@ export default function Project({
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
-            className="hidden object-cover sm:block sm:h-[20rem] sm:w-[25rem]"
+            className="hidden object-contain sm:block sm:h-[20rem] sm:w-[25rem]"
             priority={true}
           />
         </div>

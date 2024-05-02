@@ -14,18 +14,15 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I completed my B.Tech in Computer Science & Engineering from Graphic Era
-        Hill University (Dehradun). I achieved an overall CGPA of 8.1 out of 10.
-        With a strong focus on Backend Development, Data Structures and
-        Algorithms, and a solid foundation in various computer science courses,
-        I possess the technical and analytical aptitude necessary to excel in
-        this role. I am a passionate learner who constantly explores different
-        tech stacks, which enhances my ability to analyze complex problems and
-        quickly adapt to new technologies. A tech enthusiast with a learn & grow
-        attitude. I like to explore & learn about various tech stacks and have
-        developed projects with the tech stacks I have come across. Also I have
-        a keen interest is solving problems with the existing knowledge of
-        programming that I possess.
+        I completed my Bachelor&apos;s in Computer Science & Engineering from Graphic
+        Era Hill University (Dehradun) with an overall CGPA of 8.1 out of 10. My
+        main focus has been on Backend Development, Data Structures, and
+        Algorithms, and I&apos;ve built a strong foundation in various computer
+        science subjects. I&apos;m always eager to learn, constantly exploring
+        different technologies to improve my problem-solving skills and
+        adaptability. I enjoy experimenting with various tech stacks and have
+        completed projects using them. I also enjoy solving problems using my
+        programming knowledge and skills.
       </p>
 
       <p>

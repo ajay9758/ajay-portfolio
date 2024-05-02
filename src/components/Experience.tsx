@@ -16,12 +16,14 @@ export default function Experience() {
       <SectionHeading>My Work Experience</SectionHeading>
       <div className="mb-15 max-w-[53rem] scroll-mt-28 text-center ">
         <p className="text-lg font-medium sm:mb-20">
-          I have worked with some of the well known organizations as well as a
-          startup. Internships have played a crucial role in exposing me to the
-          industry standards. Internships have not only helped me get hands-on
-          experience with the cutting edge tech stacks but also I have got the
-          honor to interact with some of the industry experts and brilliant
-          minds across the country.
+          I&apos;ve had the opportunity to work with both established organizations
+          and startups, gaining valuable experience along the way. Internships
+          have been particularly influential in shaping my understanding of
+          industry standards. They&apos;ve provided me with hands-on exposure to
+          cutting-edge technology stacks and allowed me to engage with industry
+          experts and talented individuals from around the country. These
+          experiences have been instrumental in my professional development,
+          broadening my perspective and enhancing my skill set.
         </p>
         <div className="m-4 grid grid-cols-1 gap-4 p-2 sm:grid-cols-2">
           <ExperienceCard

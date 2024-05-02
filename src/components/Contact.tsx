@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <motion.section
       className="sm:mb-25 w-[min(100% ,
-    38rem)] mb-20 scroll-m-14 dark:text-white
+    38rem)] mb-20 scroll-m-14 dark:text-white text-gray-700
     "
       id="contact"
       ref={ref}
@@ -27,7 +27,7 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-center text-white  dark:text-gray-300">
+      <p className="text-center   dark:text-gray-300">
         Please contect me directly at{" "}
         <a
           className="cursor-pointer underline "
