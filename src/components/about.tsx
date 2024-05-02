@@ -1,35 +1,37 @@
+"use client";
 import React from "react";
 import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About");
+
   return (
-    <section className="mb-28 w-full max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      id="about"
+      className="mb-28 w-full max-w-[50rem] scroll-mt-[6rem] text-center dark:text-white sm:mb-0"
+    >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I completed my B.Tech in Computer Science & Engineering from Graphic Era
+        Hill University (Dehradun). I achieved an overall CGPA of 8.1 out of 10.
+        With a strong focus on Backend Development, Data Structures and
+        Algorithms, and a solid foundation in various computer science courses,
+        I possess the technical and analytical aptitude necessary to excel in
+        this role. I am a passionate learner who constantly explores different
+        tech stacks, which enhances my ability to analyze complex problems and
+        quickly adapt to new technologies. A tech enthusiast with a learn & grow
+        attitude. I like to explore & learn about various tech stacks and have
+        developed projects with the tech stacks I have come across. Also I have
+        a keen interest is solving problems with the existing knowledge of
+        programming that I possess.
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I&apos;m also
-        learning how to play the guitar.
+        <span className="italic">When I&apos;m not coding</span>, I enjoy
+        playing video games, watching movies. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>.
       </p>
     </section>
   );

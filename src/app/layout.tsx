@@ -1,5 +1,9 @@
 import { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Ajay | Portfolio",
@@ -11,12 +15,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="relative bg-gray-100 text-gray-950 h-[5555]">
-        <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"></div>
-        <div className="absolute left-[35rem] top-[-1rem] -z-10 h-[31.25rem] sm:w-screen bg-[#dbd7fb] blur-[10rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
-
-        {children}
+    <html lang="en" className="!scroll-smooth">
+      <body
+        className="dark:text-gray-90 relative bg-gray-50
+        text-gray-950 transition-colors duration-300 ease-linear dark:bg-gray-900
+      "
+      >
+        <ThemeContextProvider>
+          {children}
+          <Toaster position="top-right" />
+          <ThemeSwitch />
+          <ScrollToTop />
+        </ThemeContextProvider>
       </body>
     </html>
   );
