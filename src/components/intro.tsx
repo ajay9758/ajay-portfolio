@@ -28,11 +28,11 @@ export default function Intro() {
             }}
           >
             <Image
-              alt="ajay"
+              alt="ajay negi"
               height={100}
               width={100}
-              src="/user32.jpeg"
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              src="/ajay.png"
+              className="h-28 w-32 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
               priority={true}
             />
           </motion.div>
